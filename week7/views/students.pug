@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Students
+  body
+    h1 Students
+
+    table(border="1" cellpadding="8")
+      tr
+        th ID
+        th Name
+        th Age
+        th Course
+
+      each student in students
+        tr
+          td= student.id
+          td
+            a(href="/student/" + student.id)= student.name
+          td= student.age
+          td= student.course
+
+    p
+      a(href="/") Home

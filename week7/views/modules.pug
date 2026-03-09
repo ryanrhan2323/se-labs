@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Modules
+  body
+    h1 Modules
+
+    table(border="1" cellpadding="8")
+      tr
+        th Code
+        th Name
+      each module in modules
+        tr
+          td= module.code
+          td= module.name
+
+    p
+      a(href="/") Home
+      

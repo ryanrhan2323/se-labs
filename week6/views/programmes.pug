@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Programmes
+  body
+    h1 Programmes
+
+    table(border="1" cellpadding="8")
+      tr
+        th ID
+        th Name
+
+      each programme in programmes
+        tr
+          td= programme.id
+          td= programme.name
+
+    p
+      a(href="/") Home

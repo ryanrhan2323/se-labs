@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 3 - DOM Manipulation</title>
+    <script>
+        function changeText() {
+            document.getElementById("my_text").innerHTML = "You clicked me!";
+        }
+
+        function makeRed() {
+            document.getElementById("my_text").style.color = "red";
+        }
+
+        function makeBlue() {
+            document.getElementById("my_text").style.color = "blue";
+        }
+    </script>
+</head>
+<body>
+    <h1>DOM Manipulation Example</h1>
+
+    <p id="my_text">Hello, world!</p>
+
+    <input type="button" value="Change Text" onclick="changeText()">
+    <input type="button" value="Red Text" onclick="makeRed()">
+    <input type="button" value="Blue Text" onclick="makeBlue()">
+</body>
+</html>
